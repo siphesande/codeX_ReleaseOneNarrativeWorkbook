@@ -13,7 +13,7 @@ users.push({ first_name : 'Neil', last_name : 'Bradshaw' });
 //now loop through the users array and write the following data to the console below each other for each user
 //you can use the forEach method
  users.forEach(function(user) {
-console.log("Hi, " + user.first_name + " " + user.last_name + "!");
+console.log("Hi, " + user.first_name + " " + last_name + "!");
 }); 
    
 

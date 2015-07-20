@@ -1,6 +1,7 @@
 
 var fs  = require("fs"); 
 
+// two Asyncronous methods:
   module.exports = function(filePath){
     this.productNames = function(callback){
     var productList = [];
@@ -21,7 +22,7 @@ var fs  = require("fs");
     });
 
         console.log(productList)
-        callback(null, productList);
+        callback(null, productList);//returns a list of products
   }
 
 
@@ -51,7 +52,7 @@ var fs  = require("fs");
     });
 
             console.log(JSON.stringify(productMap));
-            callback(null, productMap);
+            callback(null, productMap); //returns a map of how many of each product is sold - mapping productName to quantity sold.
     }
 
 }
